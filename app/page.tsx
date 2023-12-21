@@ -5,7 +5,7 @@ export default function Home() {
   return (
 
     <>
-      <nav>
+      <nav className={styles.nav}>
         <Image
           src="/images/logo.svg"
           alt="Easybank Logo"
@@ -13,12 +13,14 @@ export default function Home() {
           height={23}
           priority
         />
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Careers</a></li>
+        <ul className={styles.navUl}>
+          <div className={styles.navLi}>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Careers</a></li>
+          </div>
           <Image
             src="/images/icon-hamburger.svg"
             alt="Easybank Logo"
@@ -27,15 +29,20 @@ export default function Home() {
             priority
           />
         </ul>
-        <a href="#">Request Invite</a>
+        <a className={styles.navButton} href="#">Request Invite</a>
       </nav>
 
       <main className={styles.main}>
 
-        <section>
-          <h1>Next generation digital banking</h1>
-          <p>Take your financial life online. Your Easybank account will be a one-stop-shop for spending, saving, budgeting, investing, and much more.</p>
-          <a href="#">Request Invite</a>
+        <section className={styles.intro}>
+          <div className={styles.intro_bg}>
+            <div className={styles.mockups}></div>
+          </div>
+          <div className={styles.intro_text}>
+            <h1 className={styles.title}>Next generation digital banking</h1>
+            <p>Take your financial life online. Your Easybank account will be a one-stop-shop for spending, saving, budgeting, investing, and much more.</p>
+            <a className={styles.button} href="#">Request Invite</a>
+          </div>
         </section>
 
         <section>
