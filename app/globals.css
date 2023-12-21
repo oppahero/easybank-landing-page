@@ -9,3 +9,41 @@
   --very-light-gray: hsl(0, 0%, 98%);
   --white: hsl(0, 0%, 100%);
 }
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  font-size: 1.125rem;
+}
+
+footer{
+  background-color: var(--dark-blue);
+}
+
+nav{
+  padding: 21px 23px;
+  display: flex;
+  justify-content: space-between;
+}
+
+a{
+  text-decoration: none;
+  color: var( --light-grayish-blue) ;
+}
+
+li{
+  list-style: none;
+}
+
+p{
+  color: var(--grayish-blue);
+}
+
+h1,h2,h3{
+  color: var(--dark-blue);
+  font-weight: 400;
+}
