@@ -44,6 +44,34 @@
   height: 288px;
 }
 
+.intro_text {
+  text-align: center;
+  padding:  47px 29px 104px;
+}
+
+.intro_text p {
+  margin-bottom: 50px;
+}
+
+.title {
+  margin-bottom: 23px;
+}
+
+.characteristics {
+  text-align: center;
+  background-color: var(--light-grayish-blue);
+  padding: 68px 25px 65px;
+}
+
+.characteristics p{
+  margin-bottom: 60px;
+  line-height: 25px;
+}
+
+.characteristics_title{
+ margin: 0 75px 20px;
+}
+
 @media screen and (min-width: 576px) {
   .intro_bg {
     background-image: url("/images/bg-intro-desktop.svg");
@@ -56,11 +84,13 @@
   }
 
   .intro_bg {
-    
   }
 
   .mockups {
     width: 431px;
-    height: 388px;
+    height: 498px;
+    background-position: 55px -65px;
+    position: absolute;
+    right: 0;
   }
 }
