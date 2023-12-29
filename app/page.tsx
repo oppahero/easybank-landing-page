@@ -103,66 +103,77 @@ export default function Home() {
           </div>
         </section>
 
-        <article>
-          <h2>Latest Articles</h2>
-          <article>
-            <Image
-              src="/images/image-currency.jpg"
-              alt="Currency image"
-              width={328}
-              height={200}
-              priority
-            />
-            <header>
-              <p> By Claire Robinson</p>
-              <h3>Receive money in any currency with no fees</h3>
-            </header>
-            <p> Receive money in any currency with no fees The world is getting smaller and we’re becoming more mobile. So why should you be forced to only receive money in a single …</p>
-          </article>
-          <article>
-            <Image
-              src="/images/image-restaurant.jpg"
-              alt="Restaurant image"
-              width={328}
-              height={200}
-              priority
-            />
-            <header>
-              <p>By Wilson Hutton</p>
-              <h3>Treat yourself without worrying about money</h3>
-            </header>
-            <p>Our simple budgeting feature allows you to separate out your spending and set realistic limits each month. That means you … </p>
-          </article>
-          <article>
-            <Image
-              src="/images/image-plane.jpg"
-              alt="Plane image"
-              width={328}
-              height={200}
-              priority
-            />
-            <header>
-              <p>By Wilson Hutton</p>
-              <h3>Take your Easybank card wherever you go</h3>
-            </header>
-            <p>We want you to enjoy your travels. This is why we don’t charge any fees on purchases while you’re abroad. We’ll even show you …</p>
-          </article>
-          <article>
-            <Image
-              src="/images/image-confetti.jpg"
-              alt="Confetti image"
-              width={328}
-              height={200}
-              priority
-            />
-            <header>
-              <p>By Claire Robinson</p>
-              <h3>Our invite-only Beta accounts are now live!</h3>
-            </header>
-            <p>After a lot of hard work by the whole team, we’re excited to launch our closed beta. It’s easy to request an invite through the site ...</p>
-          </article>
+        <article className={styles.articles}>
+          <div className={styles.articles__content}>
+            <h2>Latest Articles</h2>
+            <div className={styles.arcticles__grid}>
+              <article className={styles.arcticles__grid__item}>
+                <Image
+                  src="/images/image-currency.jpg"
+                  alt="Currency image"
+                  width={328}
+                  height={200}
+                  priority
+                />
+                <div className={styles.arcticles__grid__item__body}>
+                  <header>
+                    <p className={styles.arcticles__grid__item__body__autor}> By Claire Robinson</p>
+                    <h3>Receive money in any currency with no fees</h3>
+                  </header>
+                  <p className={styles.arcticles__grid__item__body__resume}>The world is getting smaller and we’re becoming more mobile. So why should you be forced to only receive money in a single …</p>
+                </div>
+              </article>
+              <article className={styles.arcticles__grid__item}>
+                <Image
+                  src="/images/image-restaurant.jpg"
+                  alt="Restaurant image"
+                  width={328}
+                  height={200}
+                  priority
+                />
+                <div className={styles.arcticles__grid__item__body}>
+                  <header>
+                    <p className={styles.arcticles__grid__item__body__autor}>By Wilson Hutton</p>
+                    <h3>Treat yourself without worrying about money</h3>
+                  </header>
+                  <p className={styles.arcticles__grid__item__body__resume}>Our simple budgeting feature allows you to separate out your spending and set realistic limits each month. That means you … </p>
+                </div>
+              </article>
+              <article className={styles.arcticles__grid__item}>
+                <Image
+                  src="/images/image-plane.jpg"
+                  alt="Plane image"
+                  width={328}
+                  height={200}
+                  priority
+                />
+                <div className={styles.arcticles__grid__item__body}>
+                  <header>
+                    <p className={styles.arcticles__grid__item__body__autor}>By Wilson Hutton</p>
+                    <h3>Take your Easybank card wherever you go</h3>
+                  </header>
+                  <p className={styles.arcticles__grid__item__body__resume}>We want you to enjoy your travels. This is why we don’t charge any fees on purchases while you’re abroad. We’ll even show you …</p>
+                </div>
+              </article>
+              <article className={styles.arcticles__grid__item}>
+                <Image
+                  src="/images/image-confetti.jpg"
+                  alt="Confetti image"
+                  width={328}
+                  height={200}
+                  priority
+                />
+                <div className={styles.arcticles__grid__item__body}>
+                  <header>
+                    <p className={styles.arcticles__grid__item__body__autor}>By Claire Robinson</p>
+                    <h3>Our invite-only Beta accounts are now live!</h3>
+                  </header>
+                  <p className={styles.arcticles__grid__item__body__resume}>After a lot of hard work by the whole team, we’re excited to launch our closed beta. It’s easy to request an invite through the site ...</p>
+                </div>
+              </article>
+            </div>
+          </div>
         </article>
-
       </main>
 
       <footer>
