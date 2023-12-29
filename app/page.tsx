@@ -35,7 +35,7 @@ export default function Home() {
       <main className={styles.main}>
 
         <section className={styles.intro}>
-          <div className={styles.intro_bg}>
+          <div className={styles.intro__bg}>
             <div className={styles.mockups}></div>
           </div>
           <div className={styles.intro_text}>
@@ -45,53 +45,60 @@ export default function Home() {
           </div>
         </section>
 
-        <section>
-          <h2>Why choose Easybank?</h2>
-          <p>We leverage Open Banking to turn your bank account into your financial hub. Control your finances like never before.</p>
-          <div>
-            <div>
-              <Image
-                src="/images/icon-online.svg"
-                alt="Icon Online"
-                width={76}
-                height={76}
-                priority
-              />
-              <h3>Online Banking</h3>
-              <p>Our modern web and mobile applications allow you to keep track of your finances wherever you are in the world.</p>
-            </div>
-            <div>
-              <Image
-                src="/images/icon-budgeting.svg"
-                alt="Icon Budgeting"
-                width={76}
-                height={76}
-                priority
-              />
-              <h3>Simple Budgeting</h3>
-              <p>See exactly where your money goes each month. Receive notifications when you’re close to hitting your limits.</p>
-            </div>
-            <div>
-              <Image
-                src="/images/icon-onboarding.svg"
-                alt="Icon Onboarding"
-                width={76}
-                height={76}
-                priority
-              />
-              <h3>Fast Onboarding</h3>
-              <p>We don’t do branches. Open your account in minutes online and start taking control of your finances right away.</p>
-            </div>
-            <div>
-              <Image
-                src="/images/icon-api.svg"
-                alt="Icon Api"
-                width={76}
-                height={76}
-                priority
-              />
-              <h3>Open API</h3>
-              <p>Manage your savings, investments, pension, and much more from one account. Tracking your money has never been easier.</p>
+
+        <section className={styles.characteristics}>
+          <div className={styles.characteristics__content}>
+            <h2 className={styles.characteristics__title}>Why choose Easybank?</h2>
+            <p>We leverage Open Banking to turn your bank account into your financial hub. Control your finances like never before.</p>
+            <div className={styles.characteristicsGrid}>
+              <div className={styles.characteristicsGrid_item}>
+                <Image
+                  className={styles.onlineIcon}
+                  src="/images/icon-online.svg"
+                  alt="Icon Online"
+                  width={76}
+                  height={76}
+                  priority
+                />
+                <h3>Online Banking</h3>
+                <p>Our modern web and mobile applications allow you to keep track of your finances wherever you are in the world.</p>
+              </div>
+              <div className={styles.characteristicsGrid_item}>
+                <Image
+                  className={styles.budgetingIcon}
+                  src="/images/icon-budgeting.svg"
+                  alt="Icon Budgeting"
+                  width={76}
+                  height={76}
+                  priority
+                />
+                <h3>Simple Budgeting</h3>
+                <p>See exactly where your money goes each month. Receive notifications when you’re close to hitting your limits.</p>
+              </div>
+              <div className={styles.characteristicsGrid_item}>
+                <Image
+                  className={styles.onboardingIcon}
+                  src="/images/icon-onboarding.svg"
+                  alt="Icon Onboarding"
+                  width={76}
+                  height={76}
+                  priority
+                />
+                <h3>Fast Onboarding</h3>
+                <p>We don’t do branches. Open your account in minutes online and start taking control of your finances right away.</p>
+              </div>
+              <div className={styles.characteristicsGrid_item}>
+                <Image
+                  className={styles.apiIcon}
+                  src="/images/icon-api.svg"
+                  alt="Icon Api"
+                  width={76}
+                  height={76}
+                  priority
+                />
+                <h3>Open API</h3>
+                <p>Manage your savings, investments, pension, and much more from one account. Tracking your money has never been easier.</p>
+              </div>
             </div>
           </div>
         </section>
