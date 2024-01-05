@@ -33,7 +33,6 @@
 }
 
 .button {
-  padding: 15px 34px;
   border-radius: 50px;
   background: linear-gradient(0.25turn, var(--lime-green), var(--bright-cyan));
 }
@@ -69,6 +68,10 @@
 
 .intro_text p {
   margin-bottom: 50px;
+}
+
+.intro_text a{
+  padding: 15px 34px;
 }
 
 .characteristics {
@@ -171,6 +174,12 @@
 
 .footer_container__second_section {
   row-gap: 28px;
+}
+
+.footer_container__second_section a{
+  margin: 0 auto;
+  width: 190px;
+  padding: 15px 34px;
 }
 
 .footer_links li {

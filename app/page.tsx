@@ -253,7 +253,7 @@ export default function Home() {
           </div>
 
           <div className={styles.footer_container__second_section}>
-            <a href="#">Request Invite</a>
+            <a className={styles.button}  href="#">Request Invite</a>
             <p>&copy; Easybank. All Rights Reserved</p>
           </div>
 
