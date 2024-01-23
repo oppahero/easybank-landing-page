@@ -7,11 +7,20 @@
   margin: 0 auto;
 }
 
+/* .characteristics__content, */
+/* .articles__content */
 .nav,
-.characteristics__content,
-.articles__content {
+.intro
+{
   min-width: 325px;
 }
+
+.articles__content,
+.characteristics__content{
+  min-width: 315px;
+  
+}
+
 
 .nav {
   max-width: var(--max-width);
@@ -24,7 +33,8 @@
 
 .title {
   margin-bottom: 23px;
-  font-size: 35px;
+  line-height: 47px;
+  font-size: 40px;
 }
 
 .navButton,
@@ -63,14 +73,18 @@
 
 .intro_text {
   text-align: center;
-  padding: 47px 29px 104px;
+  padding: 47px 23px 104px;
 }
 
 .intro_text p {
+  font-size: 15px;
+  line-height: 25px;
   margin-bottom: 50px;
 }
 
 .intro_text a{
+  font-size: 15px;
+  font-weight: 700;
   padding: 15px 34px;
 }
 
@@ -128,7 +142,7 @@
 }
 
 .arcticles__grid h3 {
-  font-size: 17px;
+  font-size: 15px;
   font-weight: 300;
   margin-bottom: 13px;
 }
@@ -144,12 +158,12 @@
 }
 
 .arcticles__grid__item__body__autor {
-  font-size: 12px;
+  font-size: 10px;
   margin-bottom: 11px;
 }
 
 .arcticles__grid__item__body__resume {
-  font-size: 13px;
+  font-size: 12.5px;
   line-height: 18px;
 }
 
@@ -174,6 +188,7 @@
 
 .footer_container__second_section {
   row-gap: 28px;
+  font-size: 15px;
 }
 
 .footer_container__second_section a{
@@ -184,6 +199,7 @@
 
 .footer_links li {
   margin-bottom: 19px;
+  font-size: 15px;
 }
 
 .socialMedia {
