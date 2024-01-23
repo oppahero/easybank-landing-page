@@ -1,9 +1,29 @@
+"use client";
+
 import Image from 'next/image'
 import styles from './page.module.css'
+import { useState } from 'react';
+
+const navLi = document.querySelector(".navLi");
+const block = document.querySelector(".block");
+
 
 export default function Home() {
-  return (
 
+  const [menu, setMenu] = useState(false);
+
+  const menuActive = () => {
+    if (menu) {
+      setMenu(false)
+      document.body.style.cssText = "overflow: visible;"
+    } else {
+      setMenu(true);
+      document.body.style.cssText = "overflow: hidden;"
+    }
+
+  }
+
+  return (
     <>
       <nav className={styles.nav}>
         <Image
@@ -14,12 +34,15 @@ export default function Home() {
           priority
         />
         <ul className={styles.navUl}>
-          <div className={styles.navLi}>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Careers</a></li>
+          <div className={styles.block}>
+            <div className={styles.navLi}>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Careers</a></li>
+            </div>
+
           </div>
           <Image
             src="/images/icon-hamburger.svg"
@@ -27,6 +50,7 @@ export default function Home() {
             width={26}
             height={13}
             priority
+            onClick={() => { menuActive() }}
           />
         </ul>
         <a className={styles.navButton} href="#">Request Invite</a>
@@ -44,7 +68,6 @@ export default function Home() {
             <a className={styles.button} href="#">Request Invite</a>
           </div>
         </section>
-
 
         <section className={styles.characteristics}>
           <div className={styles.characteristics__content}>

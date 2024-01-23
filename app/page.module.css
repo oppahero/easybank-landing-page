@@ -2,25 +2,18 @@
 .main,
 .characteristics__content,
 .articles__content {
-  /* max-width: var(--max-width);
-  min-width: 365px; */
   margin: 0 auto;
 }
 
-/* .characteristics__content, */
-/* .articles__content */
 .nav,
-.intro
-{
+.intro {
   min-width: 325px;
 }
 
 .articles__content,
-.characteristics__content{
+.characteristics__content {
   min-width: 315px;
-  
 }
-
 
 .nav {
   max-width: var(--max-width);
@@ -37,8 +30,42 @@
   font-size: 40px;
 }
 
-.navButton,
+.block{
+  position: fixed;
+  top: 65px;
+  width: 100vw;
+  height: 100vh;
+  right: 0;
+  left: 0;
+  background: linear-gradient( var(--dark-blue), transparent ); 
+}
+
 .navLi {
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 30px;
+  margin: 0 23px;
+  background-color: var(--white);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px ;
+  padding: 35px 0;
+  z-index: 2;
+}
+
+.navLi li {
+  text-align: center;
+}
+
+.navLi a {
+  color: var(--dark-blue);
+}
+
+.navButton,
+.navLi,
+.block {
   display: none;
 }
 
@@ -82,7 +109,7 @@
   margin-bottom: 50px;
 }
 
-.intro_text a{
+.intro_text a {
   font-size: 15px;
   font-weight: 700;
   padding: 15px 34px;
@@ -142,7 +169,7 @@
 }
 
 .arcticles__grid h3 {
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 300;
   margin-bottom: 13px;
 }
@@ -191,7 +218,7 @@
   font-size: 15px;
 }
 
-.footer_container__second_section a{
+.footer_container__second_section a {
   margin: 0 auto;
   width: 190px;
   padding: 15px 34px;
@@ -207,10 +234,16 @@
   column-gap: 16px;
 }
 
-.footer_icons{
+.footer_icons {
   align-items: center;
   row-gap: 29px;
 }
+
+
+/* .menuactive .navLi,
+.menuactive .block {
+  display: block;
+} */
 
 @media screen and (min-width: 576px) {
   .intro__bg {
